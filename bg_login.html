@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<title>Bulgaria</title>
+</head>
+<body style="background-image:url('karta.jpg');">
+	<header>
+		
+		<a href="bg.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Coat_of_arms_of_Bulgaria.svg/2000px-Coat_of_arms_of_Bulgaria.svg.png"></a>
+	<nav>
+		<ul>	
+  			<li><a href="home.html">Home</a></li>
+  			<li><a href="news.html">News</a></li>
+  			<li><a href="contacts.html">Contact</a></li>
+  			<li><a href="about.html">About</a></li>
+		</ul>
+	</nav>
+	</header>
+	<h1>This is Bulgaria!</h1>
+
+	<form action="/action_page.php">
+	<h2>Log in</h2>
+	<div class = "container">
+		<label for="uname"><b>Username</b></label>
+			<input type="text" placeholder="Enter your Username" name="uname" required>
+
+		<label for="pass"><b>Password</b></label>
+		 	<input type="text" placeholder="Enter your Password" name="uname" required>
+
+		
+		</div>
+
+		</form>
+
+		<!--<form>
+			<p class = "paragraph">Sign up</p>
+			<input type="text" name="fname" placeholder="First Name" class = "textbox">
+			<input type="text" name="lname" placeholder="Last Name" class = "textbox">
+			<input type="text" name="email" placeholder="E-Mail"class = "textbox"> 
+			<input type="text" name="uname" placeholder="Username"class = "textbox">
+			<input type="text" name="pswd" placeholder="Password"class = "textbox">
+		-->
+	
+
+
+	<div class = "slideshow-container">
+
+		<div class="MySlides">
+		<img src = "http://emoverseas.com/wp-content/uploads/2018/04/plovdiv_bulgaria_amphitheat-660x400.jpg"> 
+		 <div class="text">Amphitheater Plovdiv</div>
+		</div>
+
+	<div class = "MySlides">
+		<img src = "https://i.pinimg.com/originals/06/57/2f/06572f66aad4f7275002451056d78f9f.jpg"> <div class="text">Rojenski Manastir</div></div>
+
+	<div class = "MySlides">
+		<img src="https://pateshestvenik.com/wp-content/uploads/2014/10/1-%D0%94%D1%8F%D0%B2%D0%BE%D0%BB%D1%81%D0%BA%D0%B8-%D0%BC%D0%BE%D1%81%D1%82-660x400.jpeg"> <div class="text">Devil's Bridge</div></div>
+
+
+	<div class = "MySlides">
+		<img src="https://i0.wp.com/gamanews.net/wp-content/uploads/2015/05/Sofia-University-St.-Kliment-Ohridski-01-1919x720.jpg?resize=660%2C400&ssl=1">
+		 <div class="text">Sofia University St. Climent Ohredski</div></div>
+
+
+	<div class = "MySlides">
+		<img src="https://pateshestvenik.com/wp-content/uploads/2018/01/vrana-1-660x400.jpg"> <div class="text">Vrana Palace</div></div>
+
+
+	<div class = "MySlides">
+		<img src="https://pateshestvenik.com/wp-content/uploads/2014/08/941-660x400.jpg"> <div class="text">Asenovata Krepost</div></div>
+
+	<div class = "MySlides">
+		<img src="http://www.ceccarbusinessmagazine.ro/img/w-660/h-0/imagini/articole/2019/01/1/plovdiv-si-matera-capitalele-europene-ale-culturii-in-2019-a4296.jpg">
+	 <div class="text">Plovidv</div></div>
+
+	<div class = "MySlides">
+		<img src="https://pateshestvenik.com/wp-content/uploads/2014/08/P1017066-660x400.jpg"> <div class="text">Cherni vruh</div></div>
+
+
+	<div class = "MySlides">
+		<img src="https://pateshestvenik.com/wp-content/uploads/2014/08/800px-Preslav_Golden_Church_Klearchos_2-660x400.jpg"> <div class="text">Preslav Golden Church</div></div>
+
+
+	<div class = "MySlides">
+		<img src="http://emoverseas.com/wp-content/uploads/2018/03/Bansko_skiing-660x400.jpg">
+	 <div class="text">Bansko Skiing</div></div>
+
+
+	<div class = "MySlides">
+		<img src="http://carolina-fence.es/wp-content/uploads/2017/05/bulgaria-660x400.jpg"> <div class="text">Alexander Nevski Church</div></div>
+
+
+	</div>
+	<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("MySlides");
+   var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+	
+</body>
+</html>

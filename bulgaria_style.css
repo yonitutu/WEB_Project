@@ -1,0 +1,137 @@
+body {
+	
+	margin-top:80px;
+	padding: 10px;
+}
+
+h1{
+	text-align: center;
+	font-family: Blackadder ITC;
+	font-size: 60px;
+}
+
+h2{
+	padding-left:820px;
+	font-size: 35px;
+
+}
+
+header img{
+	height: 80px;
+}
+ 
+header{
+	border: 1px solid #e7e7e7;
+	background-image: url('http://hadjiyvanov.com/wp-content/uploads/2016/07/DDH_2719-Pano.jpg');
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+	display: flex;
+	align-items: center;
+
+}
+
+
+header *{
+	display: flex;
+}
+
+header li{
+	border-right: 2px;
+	margin:20px;
+}
+
+header li a{
+	display: block;
+	color: black;
+	font-family: Monotype Corsiva;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+header li a:hover {
+	background-color: grey;
+}
+
+header li a.active {
+  color: black;
+  background-color: #e6f2ff;
+}
+
+.slideshow-container{
+	max-width: 500px;
+	position: left;
+	margin-left: 40px;
+	margin-top: -535px;
+
+}
+
+.MySlides{
+	display: none;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+
+.text {
+  color: #8c0003;
+  font-size: 20px;
+  padding: 8px 0px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  position: center;
+  bottom: 8px;
+  width: 100%;
+  text-align: bottom;
+  font-family: Yu Gothic UI Semibold;
+}
+
+.container{
+	background-color: lightgrey;
+	width:320px;
+	height :470px;
+	border-radius: 10px;
+	margin:0 auto;
+	margin-right: 15px;
+	padding-left: 850px;	
+	padding:20px;
+
+}
+
+
+button{
+	background:white;
+	border-radius: 2px;
+	margin-left: 44px;
+	margin-top: 15px;
+	color: black;
+	border:none;
+	font-size: 25px;
+	border-radius:10px; 
+}
+
+button:hover{
+	opacity: 0.8;
+}
+
+input{
+  width: 100%;
+  padding: 15px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
